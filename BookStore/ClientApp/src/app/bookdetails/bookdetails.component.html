@@ -1,0 +1,22 @@
+<div class="container">
+<div class="row">
+<div class="col-sm">
+<div *ngIf="BookDetails$ | async as book">
+  <mat-card class="mat-elevation-z3" class="product-details">
+    <img mat-card-image  src="/books/{{book.coverFileName}}" >
+    <p><strong>Book name : </strong>{{book.title}}</p>
+    <p><strong>Author : </strong>{{book.author}}</p>
+    <p><strong>Category : </strong>{{book.category}}</p>
+    <p><strong>Price : </strong>{{book.price | currency : 'INR'}}</p>
+    <button mat-raised-button color="primary" routerlink="">Add to cart</button>
+  </mat-card>
+    </div>
+</div>
+</div>
+</div>
+  
+
+
+
+
+

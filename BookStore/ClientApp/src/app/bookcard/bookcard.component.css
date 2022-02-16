@@ -1,0 +1,20 @@
+/* .product-container{
+    grid-template-columns:1fr,1fr,1fr;
+} */
+
+ /* .column{
+    float: left;
+    width: 33.33%;
+    padding: 5px; 
+
+} */
+/* .row::after{
+    content: "";
+    display: table;
+    clear:both;
+}  */
+/* .container{
+    width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  } */

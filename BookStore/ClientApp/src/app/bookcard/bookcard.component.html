@@ -1,0 +1,41 @@
+<div class="content">
+    <div>
+        <div>
+            <mat-card class="product-container" >
+                <mat-card-header>
+                   <mat-card-title>{{book.title}}</mat-card-title>
+                </mat-card-header><br>
+                <img mat-card-image  src="/books/{{book.coverFileName}}" [routerLink]="['/book',book.bookId]" class="img-place">
+               <mat-card-content>
+                  <p>
+                    {{book.author}}
+                  </p>
+                  <strong>category : {{book.category}}</strong>
+                  <h3>Price: {{book.price | currency : 'INR'}}</h3>
+                </mat-card-content>
+                <mat-card-actions>
+                  <app-addtocart [bookId]="book.bookId"></app-addtocart>
+                </mat-card-actions>
+              </mat-card>
+        </div>
+    </div>
+</div>
+
+ <!-- <div class=container >
+   <div class="col-md-3 mt-"6>
+  <mat-card class="example-card" style="min-height: 100px; border-radius: 8px;">
+    <mat-card-header>
+      <mat-card-title>{{book.title}}</mat-card-title>
+   </mat-card-header><br>
+   <img mat-card-image  src="/books/{{book.coverFileName}}" [routerLink]="['/book',book.bookId]" class="img-place">
+      <mat-card-content>
+          <p>
+            {{book.author}}
+          </p>
+          <h3>Price: {{book.price | currency : 'INR'}}</h3>
+          <br>
+          <button mat-raised-button color="primary">Add To Cart</button>
+          
+      </mat-card-content>
+  </mat-card>
+</div></div> -->

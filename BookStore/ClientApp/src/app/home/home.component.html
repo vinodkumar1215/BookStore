@@ -1,0 +1,31 @@
+<mat-toolbar color="primary" style="width:100%">
+  <span>E-CartBooks</span>
+</mat-toolbar>
+<app-bookfilter></app-bookfilter>
+
+ <div class="row no-gutters pt-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-5">
+        <div *ngIf="books?.length>0;">
+          <div *ngFor="let book of books" class="p-1">
+            <app-bookcard [book]="book"></app-bookcard>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!-- <div *ngIf="books?.length>0;">
+  <div *ngFor="let book of books" >
+    <div layout="row"  layout-sm="column" layout-wrap >
+      <div flex flex-order="-1">
+        <app-bookcard [book]="book"></app-bookcard>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+

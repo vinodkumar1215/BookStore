@@ -1,0 +1,11 @@
+<p>parent to child component</p>
+
+<h1>name="{{ name }}"</h1>
+<div>
+    <label for="msgChild1">Message to child2:</label>
+    <input type="text" [(ngModel)]="currentMsgToChild2">
+    <button (click)="reset()">reset</button>
+</div>
+
+<app-child2 [msgFromParent2]='currentMsgToChild2'></app-child2>
+

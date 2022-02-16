@@ -1,0 +1,6 @@
+<mat-list>
+<mat-list-item *ngFor="let c of categories$ | async" routerLink="/filter" 
+   [queryParams]="{category:c.categoryName | lowercase}">
+        <button class="mat-raised-button">{{c.categoryName}}</button>
+</mat-list-item>
+</mat-list>
